@@ -23,7 +23,8 @@ window.onload = function() {
     "K",
     "A"
   ]);
-  let randColor = Math.random() >= 0.5 ? "black" : "red";
+
+  let randColor = randSet === "♦" || randSet === "♥" ? "red" : "black";
 
   // Then change the color (to randColor) and the value (to randSet) of each set in the card
   let H2s = document.querySelectorAll("h2");
